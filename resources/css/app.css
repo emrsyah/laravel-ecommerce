@@ -2,6 +2,8 @@
 
 body {
     font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 @tailwind base;
@@ -10,11 +12,14 @@ body {
 
 .button-animasi{
     box-shadow: inset 0 0 0 rgb(0, 0, 0);
-    transition: all ease-out 0.2s;
-    color: white;
+    transition: all ease-out 0.3s;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem 4rem;
+    font-weight: 600;
 }
 
 .button-animasi:hover{
     box-shadow: inset 20vw 0 0 rgb(0, 0, 0);
-    color: black;
+    color: white;
 }

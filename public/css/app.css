@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
 body {
     font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 /*
@@ -435,22 +437,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 .fixed{
     position: fixed;
 }
+.absolute{
+    position: absolute;
+}
 .relative{
     position: relative;
+}
+.right-0{
+    right: 0px;
 }
 .top-0{
     top: 0px;
 }
-.right-0{
-    right: 0px;
+.top-8{
+    top: 2rem;
+}
+.left-8{
+    left: 2rem;
+}
+.z-10{
+    z-index: 10;
+}
+.z-0{
+    z-index: 0;
+}
+.m-auto{
+    margin: auto;
 }
 .mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.my-10{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+.my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .mx-auto{
     margin-left: auto;
@@ -462,6 +482,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-6{
     margin-top: 1.5rem;
+}
+.mb-10{
+    margin-bottom: 2.5rem;
 }
 .ml-1{
     margin-left: 0.25rem;
@@ -490,6 +513,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mt-px{
     margin-top: -1px;
 }
+.mt-3{
+    margin-top: 0.75rem;
+}
+.block{
+    display: block;
+}
 .flex{
     display: flex;
 }
@@ -498,6 +527,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hidden{
     display: none;
+}
+.h-3\/5{
+    height: 60%;
+}
+.h-auto{
+    height: auto;
 }
 .h-5{
     height: 1.25rem;
@@ -511,6 +546,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .min-h-screen{
     min-height: 100vh;
 }
+.w-8\/12{
+    width: 66.666667%;
+}
+.w-2\/4{
+    width: 50%;
+}
 .w-5{
     width: 1.25rem;
 }
@@ -520,17 +561,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-auto{
     width: auto;
 }
-.max-w-3xl{
-    max-width: 48rem;
-}
 .max-w-xl{
     max-width: 36rem;
+}
+.max-w-max{
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
 }
 .max-w-6xl{
     max-width: 72rem;
 }
+.flex-1{
+    flex: 1 1 0%;
+}
 .grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-col{
+    flex-direction: column;
 }
 .items-center{
     align-items: center;
@@ -541,6 +590,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between{
     justify-content: space-between;
 }
+.gap-6{
+    gap: 1.5rem;
+}
 .gap-8{
     gap: 2rem;
 }
@@ -550,19 +602,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-full{
     border-radius: 9999px;
 }
+.rounded-3xl{
+    border-radius: 1.5rem;
+}
 .border-t{
     border-top-width: 1px;
 }
-.border-b-\[1px\]{
-    border-bottom-width: 1px;
+.border-black{
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-gray-200{
     --tw-border-opacity: 1;
     border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-.border-gray-400{
-    --tw-border-opacity: 1;
-    border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .bg-\[\#fefefe\]{
     --tw-bg-opacity: 1;
@@ -617,14 +669,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
+.text-\[86px\]{
+    font-size: 86px;
+}
+.text-\[84px\]{
+    font-size: 84px;
+}
 .font-semibold{
     font-weight: 600;
 }
-.leading-\[1\.15\]{
-    line-height: 1.15;
+.leading-\[1\.05\]{
+    line-height: 1.05;
 }
 .leading-7{
     line-height: 1.75rem;
+}
+.leading-\[1\]{
+    line-height: 1;
+}
+.leading-\[1\.02\]{
+    line-height: 1.02;
 }
 .tracking-wide{
     letter-spacing: 0.025em;
@@ -677,13 +741,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .button-animasi{
     box-shadow: inset 0 0 0 rgb(0, 0, 0);
-    transition: all ease-out 0.2s;
-    color: white;
+    transition: all ease-out 0.3s;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem 4rem;
+    font-weight: 600;
 }
 
 .button-animasi:hover{
     box-shadow: inset 20vw 0 0 rgb(0, 0, 0);
-    color: black;
+    color: white;
 }
 
 .hover\:bg-black:hover{

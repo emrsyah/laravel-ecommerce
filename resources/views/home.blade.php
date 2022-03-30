@@ -33,7 +33,7 @@
         <h5 class="font-semibold text-3xl">Our Collections</h5>
 
         <!-- Card Container -->
-        <div class='grid-cols-4 grid gap-4 mt-8 justify-center items-center'>
+        <div class='grid-cols-1 md:grid-cols-4 sm:grid-cols-2 grid gap-4 mt-8 justify-center items-center'>
             <!-- Card -->
             <div class="flex-1 border-[1px] border-gray-300 rounded-md cursor-pointer transition-all hover:scale-[102%] ease-out duration-75">
                 <img src="{{ URL::to('/assets/gambar6.jpg') }}" alt="" class="w-80 h-80 object-cover rounded-t-md">
@@ -50,29 +50,18 @@
                 <img src="{{ URL::to('/assets/gambar7.jpg') }}" alt="" class="w-80 h-80 object-cover rounded-t-md">
                 <div class="p-2 pb-4 flex justify-between flex-col gap-4">
                     <div>
-                        <h5 class="font-medium text-lg">Simple Elegant Chair</h5>
+                        <h5 class="font-medium text-lg">Blue Royal Chair</h5>
                         <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <h5 class="font-semibold text-xl">Rp 120.000</h5>
                 </div>
             </div>
-            <!-- Card -->
-            <div class="flex-1 border-[1px] border-gray-300 rounded-md cursor-pointer transition-all hover:scale-[102%] ease-out duration-75">
-                <img src="{{ URL::to('/assets/gambar8.jpg') }}" alt="" class="w-80 h-80 object-cover rounded-t-md">
-                <div class="p-2 pb-4 flex justify-between flex-col gap-4">
-                    <div>
-                        <h5 class="font-medium text-lg">Simple Elegant Chair</h5>
-                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <h5 class="font-semibold text-xl">Rp 120.000</h5>
-                </div>
-            </div>
-
 
         </div>
 
     </div>
 
+    @include('layout.footer')
 
 
 </body>

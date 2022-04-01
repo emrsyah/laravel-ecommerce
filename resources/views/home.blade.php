@@ -16,7 +16,7 @@
         <div class="flex-1">
             <h1 class="text-8xl font-semibold leading-[1.05]">Everything your home deserves</h1>
             <p class="mt-4 mb-10 text-gray-600 max-w-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, magni praesentium possimus voluptatibus libero explicabo. Accusamus.</p>
-            <a href="" class="button-animasi">Explore Now</a>
+            <a href="" class="button-animasi ">Explore Now</a>
         </div>
 
         <!-- Kanan -->

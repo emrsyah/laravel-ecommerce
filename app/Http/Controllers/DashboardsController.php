@@ -33,7 +33,7 @@ class DashboardsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

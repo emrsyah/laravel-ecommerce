@@ -34,7 +34,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::resource('item', 'App\Http\Controllers\ItemController');
+// Route::get('/dashboard/create', function () {
+//     return view('dashboardCreate');
+// })->middleware(['auth'])->name('dashboardCreate');
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::resource('item', ItemController::class);
+  });
 
 // Route::get('/dashboard','App\Http\Controllers\DashboardsController@index')->middleware(['auth'])->name('dashboard');
 

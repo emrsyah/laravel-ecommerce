@@ -30,6 +30,7 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
+                <a href="item/create">Create</a>
             </main>
         </div>
     </body>
